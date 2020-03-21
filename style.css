@@ -13,43 +13,30 @@ body {
     height: 55vh;
     background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
     border-radius: 50%;
-    animation: animate 0.3s linear infinite;
-
+    animation: animate 0.5s linear infinite;
 }
 @keyframes animate {
     from {
         transform: rotate(0deg);
     }
     to {
-       transform: rotate(100deg); 
+       transform: rotate(360deg); 
     }
 }
-.circle:after {
+.circle:before {
     content: '';
     position: absolute;
-    top:35px;
-    right:35px;
-    left: 35px;
-    bottom: 35px;
-    background-color: #000;
+    top:-15px;
+    right:-15px;
+    left: -15px;
+    bottom: -15px;
+    background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
     border-radius:50%;
+    filter: blur(25px);
 }
 .circle span {
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
     border-radius: 50%;
-}
-.circle span:nth-child(1){
-    filter: blur(5px);
-}
-.circle span:nth-child(2){
-    filter: blur(10px);
-}
-.circle span:nth-child(3){
-    filter: blur(20px);
-}
-.circle span:nth-child(4){
-    filter: blur(55px);
 }
