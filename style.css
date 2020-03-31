@@ -37,29 +37,29 @@ body {
 .circle:after {
     content: '';
     position: absolute;
-    top: 27px;
-    right: 27px;
-    left: 27px;
-    bottom: 27px;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 30px;
     background: #050210;
     border-radius: 50%;
 }
 .inner-circle {
-    width: 250px;
-    height: 250px;
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
-    background-color: #483D8B;
-    position: absolute;
-    top: 185px;
-    left: 185px;
+    background: linear-gradient(#484179 ,#050210 55%);
+    position: relative;
+    top: 20vh;
+    margin: 0 auto;
     z-index: 9999;
-    animation: angry-animation 1s linear infinite;
+    animation: angry-animation 1.8s linear infinite;
 }
 @keyframes angry-animation {
     0%{
       transform: scale(0);
     }
     100%{
-      transform: scale(1);
+      transform: scale(4);
     }
 }
